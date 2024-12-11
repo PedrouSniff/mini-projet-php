@@ -1,0 +1,122 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête principal */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+    font-size: 2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff6b6b;
+}
+
+/* Articles de films */
+article {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+/* Titres et sous-titres */
+article h3, article h4 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 5px;
+}
+
+article h4 {
+    font-size: 1.2em;
+}
+
+/* Texte */
+article p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Image */
+article img {
+    display: block;
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Liens d'action */
+article a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+article a[href*="voirplus"] {
+    background-color: #4CAF50;
+}
+
+article a[href*="modifier"] {
+    background-color: #FFA500;
+}
+
+article a[href*="delete"] {
+    background-color: #E74C3C;
+}
+
+article a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    article {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+}
